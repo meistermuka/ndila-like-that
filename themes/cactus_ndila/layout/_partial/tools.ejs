@@ -1,0 +1,39 @@
+<section id="tools">
+    <h1>Tools</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Tools</th>
+                <th>Type</th>
+                <th>Overall Understanding</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var obj in site.data.tools) { %>
+            <tr>
+                <td><%= site.data.tools[obj].tool %></td>
+                <td><%= site.data.tools[obj].type %></td>
+                <td><strong>
+                    <% var hashes = Math.floor(site.data.tools[obj].overall / 5) %>
+                    <% var spaces = 20 - hashes %>
+                    <% var hashes_string = "" %>
+                    <% var spaces_string = "" %>
+                    <% for(var i = 0; i < hashes; i++) { %>
+                        <% hashes_string += "#" %>
+                    <% } %>
+                    <% for(var j = 0; j < spaces; j++) { %>
+                        <% spaces_string += "&nbsp;" %>
+                    <% } %>
+                    [<span style="color: #07b277;">
+                    <%- _p(hashes_string) %>
+                    </span>
+                    <%- _p(spaces_string) %>
+                    ]
+                    <%= site.data.tools[obj].overall %>%
+                </strong>
+                </td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+</section>
