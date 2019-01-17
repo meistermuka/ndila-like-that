@@ -3,10 +3,6 @@ title: about
 date: 2019-01-14 16:13:51
 ---
 
-Tools
-=====
-Something about technology tools
-
 Education
 =========
 **École de technologie supérieure (ÉTS), Montreal QC**

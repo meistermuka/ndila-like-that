@@ -1,0 +1,32 @@
+[
+    {
+        "tool": "Python 2",
+        "type": "Programming Language",
+        "overall": 80
+    },
+    {
+        "tool": "Python 3",
+        "type": "Programming Language",
+        "overall": 50
+    },
+    {
+        "tool": "Flas",
+        "type": "Framework",
+        "overall": 80
+    },
+    {
+        "tool": "Javascript (ES2015)",
+        "type": "Programming Language",
+        "overall": 45
+    },
+    {
+        "tool": "Jenkins",
+        "type": "CI/CD",
+        "overall": 50
+    },
+    {
+        "tool": "Teamcity",
+        "type": "CI/CD",
+        "overall": 50
+    }
+]
